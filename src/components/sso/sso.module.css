@@ -1,0 +1,37 @@
+.socialLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socialBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+
+.googleBtn:hover {
+    background-color: #f8f9fa;
+    border-color: var(--border-color);
+}
+
+.appleBtn:hover {
+    background-color: #f8f9fa;
+    border-color: var(--border-color);
+}
+
+.svgIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}

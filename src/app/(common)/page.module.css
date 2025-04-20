@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--primary-font-color);
+}
+
+.subtitle {
+  font-size: 3rem;
+  color: var(--primary-font-color);
+}
