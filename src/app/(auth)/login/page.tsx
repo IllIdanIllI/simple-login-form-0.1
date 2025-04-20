@@ -9,8 +9,8 @@ import { validateLoginForm } from '@/service/auth/validation';
 
 const MOCK_URL = 'https://api.example.com/login';
 
-const prevFetch = window.fetch;
-window.fetch = (url: Parameters<typeof fetch>[0], init?: Parameters<typeof fetch>[1]) => {
+const prevFetch = global.fetch;
+global.fetch = (url: Parameters<typeof fetch>[0], init?: Parameters<typeof fetch>[1]) => {
   if (url !== MOCK_URL) {
     return prevFetch(url, init)
   }
